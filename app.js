@@ -22,12 +22,12 @@ app.get('/', function(req, res) {
 app.get('/contact', function(req, res){
   res.render('page/contact');
 });
+*/
 // thankyou page
 app.get('/thankyou', function(req, res){
   res.render('page/thankyou');
 });
 
-*/
 
 // post route for form submission
 app.post('/thankyou', function(req, res){
@@ -44,12 +44,12 @@ app.post('/thankyou', function(req, res){
 `;
 // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
-    host: 'look.up.host',
+    host: 'smtp.zoho.com',
     port: 465,
     secure: true, // true for 465, false for other ports
     auth: {
-        user: 'support@youremail.com', // generated ethereal user
-        pass: 'yourpassword'  // generated ethereal password
+        user: 'mdc@triadcharity.com', // generated ethereal user
+        pass: 'hackaton123'  // generated ethereal password
     },
     tls:{
       rejectUnauthorized:false
@@ -58,7 +58,7 @@ app.post('/thankyou', function(req, res){
   // setup email data with unicode symbols
   let mailOptions = {
       from: '"Nodemailer Contact" <support@youremail.com>', // sender address
-      to: 'admin@youremail.com', // list of receivers
+      to: "kennashka.desilva001@mymdc.net, jeffrey.yuvero001@mymdc.net", // list of receivers
       subject: 'New Contact Request From Website', // Subject line
       text: 'Hello Site Manager', // plain text body
       html: output // html body
