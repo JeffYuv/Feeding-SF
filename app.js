@@ -59,7 +59,7 @@ app.post('/thankyou', function(req, res){
   });
   // setup email data with unicode symbols
   let mailOptions = {
-      from: '"Nodemailer Contact" <support@youremail.com>', // sender address
+      from: '"Nodemailer Contact" <mdc@triadcharity.com>', // sender address
       to: "kennashka.desilva001@mymdc.net, jeffrey.yuvero001@mymdc.net", // list of receivers
       subject: 'New Contact Request From Website', // Subject line
       text: 'Hello Site Manager', // plain text body
