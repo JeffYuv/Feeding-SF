@@ -39,10 +39,10 @@ app.post('/thankyou', function(req, res){
   <ul>
     <li>Name: ${req.body.name}</li>
     <li>Email: ${req.body.email}</li>
-    <li>Email: ${req.body.company}</li>
+    <li>Telephone: ${req.body.tel}</li>
+    <li>Telephone: ${req.body.school}</li>
+    <li>Message: ${req.body.mesg}</li>
   </ul>
-  <h3>Message</h3>
-  <p>${req.body.message}</p>
 `;
 // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
