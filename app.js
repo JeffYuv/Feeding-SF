@@ -5,7 +5,9 @@ var bodyParser = require('body-parser')
 var nodemailer = require("nodemailer");
 var favicon = require('express-favicon');
 // path to favicon directory
+/*
 app.use(favicon(__dirname + '/public/dd-favicon.png'));
+*/
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 // use res.render to load up an ejs view file
