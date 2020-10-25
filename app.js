@@ -50,8 +50,8 @@ app.post('/thankyou', function(req, res){
     port: 465,
     secure: true, // true for 465, false for other ports
     auth: {
-        user: 'mdc@triadcharity.com', // generated ethereal user
-        pass: 'hackaton123'  // generated ethereal password
+        user: 'youremail@email.com', // generated ethereal user
+        pass: 'yourpassword'  // generated ethereal password
     },
     tls:{
       rejectUnauthorized:false
